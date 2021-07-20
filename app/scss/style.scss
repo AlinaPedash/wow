@@ -5,4 +5,21 @@
 @import 'global';
 
 
+.header{
+  &__inner{
+  display: flex;
+  justify-content: space-between;
+  }
+}
+.menu{
+&__list{
+  display: flex;
+  }
+&__list-item + .menu__list-item{
+   padding-left: 30px;
+  }
+}
+
+
+
 @import 'media';
