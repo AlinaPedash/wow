@@ -9,15 +9,79 @@
   &__inner{
   display: flex;
   justify-content: space-between;
+  margin: 50px 75px;
   }
 }
 .menu{
+&__btn{
+  display: none;
+}
 &__list{
   display: flex;
   }
 &__list-item + .menu__list-item{
    padding-left: 30px;
   }
+  &__list-link{
+    color: #436372;
+    &:hover{
+      color: blue;
+    }
+  }
+}
+
+.user-nav{
+  display: flex;
+  &__search-wrapper{
+    height: 50px;
+    width: 50px;
+    background-color: #edf1f4;
+    border-radius: 50%;
+    padding: 17px;
+    margin-right: 20px;
+  }
+  &__link{
+    position: relative;
+  }
+  &__num{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFF;
+    top: -10px;
+    right: -15px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: black;
+  }
+
+  &__heart-cart-wrapper{
+    display: inline-flex;
+    height: 50px;
+    background-color: #fcd7b6;
+    padding: 20px 40px;
+    border-radius: 50px;
+  }
+  &__link + .user-nav__link{
+    padding-left: 80px;
+  }
+
+
+  &__link-cart{
+    border-left: 1px solid #fff;
+  }
+
+  
+ &__button-wrapper{
+   height: 50px;
+   width: 50px;
+   padding: 15px;
+   background-color: #a3bbc8;
+   border-radius: 50%;
+   margin-left: 20px;
+ }
 }
 
 
